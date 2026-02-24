@@ -1,80 +1,29 @@
-# Academic Project Page Template
+# SurgCUT3R 项目网站（静态页面）
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+本文件夹是 **SurgCUT3R** 论文对应的项目网站源文件（纯静态 HTML/CSS/JS，无需构建）。
 
-A clean, responsive template for academic project pages.
+## 你需要改哪里
 
+- **主页内容**：编辑 `index.html`
+- **样式**：编辑 `static/css/index.css`
+- **交互（例如 BibTeX 复制按钮）**：编辑 `static/js/index.js`
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+## 放置论文 PDF（让 “Paper” 按钮可用）
 
+把论文 PDF 放到下面路径（自己创建目录即可）：
 
+- `static/pdfs/paper.pdf`
 
-## Start using the template
-To start using the template click on `Use this Template`.
+然后打开 `index.html` 里的 Paper 按钮链接会自动生效（目前指向 `static/pdfs/paper.pdf`）。
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+## 你还需要补的关键信息（SEO/分享卡片）
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+`index.html` 的 `<head>` 里仍保留了少量 TODO，需要你填成真实地址：
 
-## What's New
+- `og:url`、结构化数据里的 `url`
+- `og:image`（建议把 1200×630 的预览图放到 `static/images/social_preview.png`，并把域名替换成你实际部署地址）
+- Code 链接（当前是 “Code (Coming Soon)” 的禁用按钮）
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+## 说明
 
-## Components
-
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
-
-## Customization
-
-The HTML file has TODO comments showing what to replace:
-
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
-
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
-
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
-
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
-
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
-
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+此页面最初基于 Academic Project Page Template（Nerfies 风格）改写而来。

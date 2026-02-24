@@ -62,6 +62,12 @@ body {
   background: var(--primary-color) !important;
 }
 
+.is-disabled {
+  opacity: 0.6 !important;
+  pointer-events: none !important;
+  filter: grayscale(10%);
+}
+
 .button.is-dark:active {
   transform: translateY(0);
   box-shadow: var(--shadow-md);
@@ -375,6 +381,32 @@ pre {
   box-shadow: var(--shadow-sm);
 }
 
+/* Paper figures (images + captions) */
+.paper-figure {
+  margin: 2rem auto;
+  max-width: 100%;
+}
+
+.paper-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-color);
+}
+
+.paper-figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.paper-figure figcaption strong {
+  color: var(--text-primary);
+}
+
 code {
   background: var(--background-accent) !important;
   color: var(--text-primary) !important;
@@ -412,10 +444,6 @@ code {
 
 .copy-bibtex-btn.copied {
   background: #10b981;
-}
-
-.copy-bibtex-btn.copied .copy-text::after {
-  content: "ied!";
 }
 
 /* Scroll to Top Button */
