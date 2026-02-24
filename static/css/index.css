@@ -395,6 +395,17 @@ pre {
   border: 1px solid var(--border-color);
 }
 
+.paper-figure video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-color);
+  background: #000;
+  display: block;
+}
+
 .paper-figure figcaption {
   margin-top: 0.75rem;
   font-size: 0.95rem;
