@@ -340,7 +340,7 @@ body {
 .content.has-text-justified {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .content.has-text-justified p {
@@ -410,7 +410,7 @@ pre {
   margin-top: 0.75rem;
   font-size: 0.95rem;
   line-height: 1.6;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   text-align: left;
 }
 
